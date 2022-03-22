@@ -1,2 +1,2 @@
 # crowdfund
-this repo is on of frontendmentor.io challenges, about crowdfunding site
+this repo is one of frontendmentor.io challenges, about crowdfunding site
