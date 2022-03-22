@@ -1,0 +1,30 @@
+@mixin respond($break) {
+    @if($break == phone) {
+        @media(max-width:33.125rem) {@content};
+    }    
+    @if($break == tab-port) {
+        @media(max-width:33.125rem) {@content};        
+    }
+    @if($break == tab-land) {
+        @media(max-width:46.875rem) {@content};        
+    }
+    @if($break == big-desktop) {
+        @media(max-width:112.5rem) {@content};        
+    }
+}
+
+@mixin respondmin($break) {
+
+    @if($break == phone) {
+        @media(min-width:48.01rem) {@content};
+    }    
+    @if($break == tab-port) {
+        @media(min-width:56.26em) {@content};        
+    }
+    @if($break == tab-land) {
+        @media(min-width:75.01em) {@content};        
+    }
+    @if($break == big-desktop) {
+        @media(min-width:112.51em) {@content};        
+    }
+}

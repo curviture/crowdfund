@@ -1,0 +1,29 @@
+button {
+    border: none;
+    width: auto;
+    overflow: hidden;
+    background: transparent;
+    -webkit-appearance: none;
+
+    &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+}
+
+input[type="submit"] {
+    border: none;
+    width: auto;
+    overflow: hidden;
+
+}
+
+input {
+    box-shadow: none;
+    ouline: none;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}

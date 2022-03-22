@@ -1,0 +1,17 @@
+.input {
+    font-weight: 700;
+    &-group {
+        &--icon {
+            .input {
+                margin-left: -3.8rem;
+                border: 1px solid #dddddd;
+                background-color: transparent;
+            }
+        }
+    }
+    &__icon {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #aaa;
+    }
+}

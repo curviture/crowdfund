@@ -1,0 +1,15 @@
+.main {
+    padding-top: 4.8rem;
+    background-image: url('../assets/image-hero-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+    margin-bottom: 2.6rem;
+
+    &__jumbotron {
+        margin-top: 23.8rem;
+    }
+
+    @include respond(phone) {
+        background-image: url('../assets/image-hero-mobile.jpg');
+    }
+}

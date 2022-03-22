@@ -1,0 +1,218 @@
+.pledge {
+  border: 1px solid #ececec;
+  margin-bottom: 2.4rem;
+  border-radius: 1rem;
+  padding-top: 3.3rem;
+  padding-bottom: 3.2rem;
+
+  &__close {
+    display: block!important;
+    color: #000!important;
+    background-image: url('../assets/icon-close-modal.svg');
+    background-repeat: no-repeat;
+    z-index: 1000;
+  }
+
+  &__modal {
+    padding-top: 19vh;
+    padding-bottom: 10vh;
+    overflow: auto;
+  }
+
+  &.selected {
+    border-color: $highlight;
+    padding-bottom: 0;
+    .pledge__footer {
+      display: flex !important;
+    }
+    .pledge__body {
+      padding-bottom: 3.1rem;
+    }
+    .pledge__heading {
+      &:before {
+        content: "\2022";
+        // background-color: $highlight;
+        color: $highlight;
+        font-size: 3.5rem;
+        display: inline-block;
+        line-height: 1.1rem;
+        text-align: center;
+      }
+    }
+  }
+
+  &--disabled {
+      opacity: .55;
+      .pledge__heading {
+          cursor: default;
+          pointer-events: none;
+
+          &:hover {
+
+          }
+      }
+  }
+
+  &__head {
+    padding-left: 7.4rem;
+    padding-bottom: 2rem;
+    padding-right: 2.9rem;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    @include respond(phone) {
+      padding-left: 6.4rem;
+      padding-right: 2.5rem;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: start;
+    }
+  }
+
+  &__amount-left {
+    font-weight: 700;
+    font-size: 1.8rem;
+
+    &--mob {
+      display: none;
+    }
+
+    @include respond(phone) {
+      display: none;
+      &--mob {
+        display: block;
+        margin-top: 3.2rem;
+      }
+    }
+
+    &__label {
+      font-size: 1.4rem;
+      color: #a1a1a1;
+      vertical-align: top;
+      padding-left: 0.5rem;
+      
+    }
+  }
+
+  &__input {
+    // display: none;
+  }
+
+  &__heading {
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: relative;
+
+    @include respond(phone) {
+      font-size: 1.4rem;
+    }
+
+    &:hover {
+      color: $highlight;
+
+      &:before {
+        border-color: $highlight;
+      }
+    }
+
+    &.selected {
+    }
+
+    span {
+      padding-left: 1rem;
+
+      @include respond(phone) {
+        padding-left: 0;
+        display: block;
+        margin-top: 1rem;
+      }
+    }
+
+    &:before {
+      content: "";
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 1.1rem;
+      display: block;
+      border: 2px solid #dddddd;
+      position: absolute;
+      left: -4.7rem;
+      top: 0rem;
+
+      @include respond(phone) {
+        top: 50%;
+        left: -4rem;
+        transform: translatey(-50%);
+      }
+    
+    }
+  }
+
+  &__body {
+    padding-left: 7.4rem;
+    padding-right: 2.8rem;
+    // padding-bottom: 2.5rem;
+
+    @include respond(phone) {
+      padding-left: 2.4rem;
+      padding-right: 2.4rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+  }
+
+  &__footer {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.6rem;
+    padding-right: 2.6rem;
+    border-top: 1px solid #ebebeb;
+    padding-top: 2.3rem;
+    padding-bottom: 2.1rem;
+    display: none;
+
+    @include respond(phone) {
+      flex-flow: column nowrap;
+      padding-left: 2.2em;
+      padding-right: 2.2em;
+    }
+
+    &-text {
+      color: #8a8a8a;
+      font-size: 1.5rem;
+
+      @include respond(phone) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__input {
+    align-self: stretch;
+    &-box {
+      // width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__input {
+    width: 10rem;
+    text-align: center;
+    margin-right: 2.1rem;
+    // margin-left: -2.5rem;
+    font-weight: 400;
+
+    &:focus {
+      border-color: $highlight;
+    }
+  }
+}

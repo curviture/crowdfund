@@ -1,0 +1,88 @@
+.info {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding-right: 4.8rem;
+    padding-left: 4.8rem;
+    margin-bottom: 2.5rem;
+
+    &__content {
+        padding-top: 4.4rem;
+        padding-bottom: 3.8rem;
+        @include respond(tab-land) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @include respond(phone) {
+            flex-flow: column nowrap;
+        }
+    }
+
+    &__tile {
+        display: inline-block;
+        padding-top: .9rem;
+        @include respond(phone) {
+            &:after {
+                display: block;
+                content: '';
+                width: 8rem;
+                height: 1px;
+                background-color: #d6d6d6;
+                margin: 0 auto;
+                margin-top: 2.6rem;
+            }
+        }
+        &:not(:first-child) {
+            padding-left: 4.7rem;
+            border-left: 1px solid #dbdbdb;
+            text-align: left;
+            width: 22.5rem;
+
+            @include respond(tab-land) {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
+            @include respond(phone) {
+                border-left: none;
+                padding-top: 3.5rem;
+            }
+        }
+
+        &:first-child {
+            width: 17.6rem;
+            @include respond(tab-land) {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+
+        @include respond(tab-land) {
+            width: auto!important;
+            text-align: center!important;
+        }
+    }
+
+    &__data {
+        font-size: 3.2rem;
+        letter-spacing: 0px;
+        margin-bottom: 1.3rem;
+
+        @include respond(tab-land) {
+            font-size: 2.8rem;
+        }
+    }
+
+    &__label {
+        font-size: 1.5rem;
+        @include respond(tab-land) {
+            font-size: 1.2rem;
+            // letter-spacing: -2px;
+        }
+    }
+
+    &__progress {
+        padding-bottom: 4.7rem;
+    }
+
+}

@@ -1,0 +1,106 @@
+.offer {
+    padding-bottom: 4.6rem;
+    &__tile {
+        padding-top: 3.9rem;
+        padding-bottom: 3.1rem;
+        border: 1px solid #dbdbdb;
+        border-radius: 1rem;
+        padding-left: 3.1rem;
+        padding-right: 3.1rem;
+
+        @include respond(phone) {
+            padding-left: 2.1rem;
+            padding-right: 2.1rem;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 2.4rem;
+        }
+
+        &--disabled {
+            opacity: .7;
+
+            .offer__name {
+                color: #898989;
+            }
+        }
+        
+    }
+
+    &__head {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2.6rem;
+        font-weight: 700;
+
+        @include respond(phone) {
+            flex-flow: column nowrap;
+            align-items: start;
+        }
+    }
+
+    &__name {
+        font-size: 1.8rem;
+        @include respond(phone) {
+            margin-bottom: 1.4rem;
+        }
+    }
+
+    &__price {
+        color: $highlight;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+    &__body {
+        margin-bottom: 2.4rem;
+
+        &__text {
+            line-height: 3rem;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(phone) {
+            flex-flow: column nowrap;
+            align-items: start;
+        }
+    }
+
+    &__reward-button {
+        min-width: 15.7rem;
+
+    }
+
+    &__amount-left {
+        font-size: 3.1rem;
+        font-weight: 700;
+
+
+
+        @include respond(phone) {
+            margin-bottom: 3.2rem;
+            font-size: 2rem;
+        }
+
+        &__label {
+            font-size: 1.4rem;
+            color: #656565;
+            font-weight: 400;
+            vertical-align: 60%;
+            padding-left: .5rem;
+
+            @include respond(phone) {
+                font-size: 1.2rem;
+                vertical-align: 30%;
+            }
+        }
+    }
+}
