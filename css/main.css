@@ -252,7 +252,8 @@ body {
     display: inline-block;
     width: 5.6rem;
     height: 5.6rem;
-    background-image: url("../assets/icon-bookmark.svg"); }
+    background-image: url("../assets/icon-bookmark.svg");
+    background-repeat: no-repeat; }
   .button-bookmark:checked + .button-bookmark__label:before {
     content: '';
     display: inline-block;
