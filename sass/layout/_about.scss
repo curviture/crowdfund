@@ -7,17 +7,23 @@
     margin-bottom: 12.5rem;
 
     @include respond(phone) {
-        padding-right: 2.1rem;
-        padding-left: 2.1rem;
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
         margin-bottom: 7.8rem;
+        padding-top: 3.3rem;
     }
 
     &__heading {
-        margin-bottom: 3.8rem;
+        margin-bottom: 3rem;
+        font-size: 1.8rem;
     }
 
     &__content-text {
         line-height: 3rem;
+
+        @include respond(phone) {
+            line-height: 2.4rem;
+        }
 
     }
 

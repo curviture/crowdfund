@@ -5,6 +5,11 @@
   padding-top: 3.3rem;
   padding-bottom: 3.2rem;
 
+  @include respond(phone) {
+    padding-top: 2.4rem;
+    padding-bottom: 1rem;
+  }
+
   &__close {
     display: block!important;
     color: #000!important;
@@ -27,6 +32,7 @@
     }
     .pledge__body {
       padding-bottom: 3.1rem;
+      margin-bottom: 0;
     }
     .pledge__heading {
       &:before {
@@ -64,6 +70,7 @@
     @include respond(phone) {
       padding-left: 6.4rem;
       padding-right: 2.5rem;
+      margin-bottom: 1.8rem;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: start;
@@ -164,6 +171,10 @@
   &__text {
     font-size: 1.5rem;
     line-height: 2.7rem;
+
+    @include respond(phone) {
+      line-height: 2.5rem;
+    }
   }
 
   &__footer {

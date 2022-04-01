@@ -15,6 +15,8 @@
         }
         @include respond(phone) {
             flex-flow: column nowrap;
+            padding-top: 2rem;
+            padding-bottom: 0;
         }
     }
 
@@ -71,6 +73,10 @@
         @include respond(tab-land) {
             font-size: 2.8rem;
         }
+
+        @include respond(phone) {
+            font-size: 3rem;
+        }
     }
 
     &__label {
@@ -78,6 +84,10 @@
         @include respond(tab-land) {
             font-size: 1.2rem;
             // letter-spacing: -2px;
+        }
+
+        @include respond(phone) {
+            font-size: 1.4rem;
         }
     }
 

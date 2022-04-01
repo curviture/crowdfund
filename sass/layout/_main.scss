@@ -6,10 +6,12 @@
     margin-bottom: 2.6rem;
 
     &__jumbotron {
-        margin-top: 23.8rem;
+        margin-top: 19rem;
     }
 
     @include respond(phone) {
         background-image: url('../assets/image-hero-mobile.jpg');
+        background-size: 100% 300px;
+        padding-top: 3.3rem;
     }
 }

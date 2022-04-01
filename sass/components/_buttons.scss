@@ -42,6 +42,11 @@
         padding-bottom: 1.7rem;
         padding-left: 3.9rem;
         padding-right: 3.7rem;
+
+        @include respond(phone) {
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
     }
 
     &--small {
@@ -122,7 +127,7 @@
         width: 5.6rem;
         height: 5.6rem;
         background-image: url("../assets/icon-bookmarked.svg");
-
+        background-repeat: no-repeat;
     }
 
     &:not(:checked) + &__label &__txt {

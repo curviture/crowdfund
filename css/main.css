@@ -83,13 +83,15 @@ body {
   padding-right: 4.8rem; }
   @media (max-width: 33.125rem) {
     .jumbotron {
-      margin-top: 19rem;
       padding-left: 2.4rem;
       padding-right: 2.4rem; } }
   .jumbotron__header {
     position: relative;
-    padding-top: 5.8rem;
-    margin-bottom: 2.1rem; }
+    padding-top: 5.4rem;
+    margin-bottom: 2.1rem;
+    font-size: 2.1rem; }
+  .jumbotron__text {
+    line-height: 1.8rem; }
   .jumbotron__icon {
     position: absolute;
     top: 0;
@@ -97,6 +99,9 @@ body {
     transform: translate(-50%, -50%); }
   .jumbotron__body {
     margin-bottom: 4.1rem; }
+    @media (max-width: 33.125rem) {
+      .jumbotron__body {
+        margin-bottom: 3.2rem; } }
   .jumbotron__footer {
     display: flex;
     flex-flow: row nowrap;
@@ -156,7 +161,8 @@ body {
       right: 0rem;
       width: 1.6rem;
       height: 1.6rem;
-      background: url("../assets/icon-hamburger.svg"); } }
+      background-image: url("../assets/icon-hamburger.svg");
+      background-repeat: no-repeat; } }
 
 .nav__item {
   margin-left: 1.8rem;
@@ -208,6 +214,10 @@ body {
     padding-bottom: 1.7rem;
     padding-left: 3.9rem;
     padding-right: 3.7rem; }
+    @media (max-width: 33.125rem) {
+      .button--large {
+        padding-left: 5rem;
+        padding-right: 5rem; } }
   .button--small {
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
@@ -259,7 +269,8 @@ body {
     display: inline-block;
     width: 5.6rem;
     height: 5.6rem;
-    background-image: url("../assets/icon-bookmarked.svg"); }
+    background-image: url("../assets/icon-bookmarked.svg");
+    background-repeat: no-repeat; }
   .button-bookmark:not(:checked) + .button-bookmark__label .button-bookmark__txt {
     display: inline-block; }
   .button-bookmark:not(:checked) + .button-bookmark__label .button-bookmark__txt--marked {
@@ -287,7 +298,8 @@ body {
   @media (max-width: 33.125rem) {
     .modal {
       padding-left: 2.5rem;
-      padding-right: 2.5rem; } }
+      padding-right: 2.5rem;
+      padding-top: 3rem; } }
   .modal.visible {
     display: block; }
   .modal__head {
@@ -295,6 +307,12 @@ body {
     .modal__head .heading {
       font-size: 2.4rem;
       margin-bottom: 2.5rem; }
+      @media (max-width: 33.125rem) {
+        .modal__head .heading {
+          font-size: 1.8rem;
+          margin-bottom: 3.5rem; } }
+  .modal__text {
+    line-height: 2rem; }
 
 .pledge {
   border: 1px solid #ececec;
@@ -302,6 +320,10 @@ body {
   border-radius: 1rem;
   padding-top: 3.3rem;
   padding-bottom: 3.2rem; }
+  @media (max-width: 33.125rem) {
+    .pledge {
+      padding-top: 2.4rem;
+      padding-bottom: 1rem; } }
   .pledge__close {
     display: block !important;
     color: #000 !important;
@@ -318,7 +340,8 @@ body {
     .pledge.selected .pledge__footer {
       display: flex !important; }
     .pledge.selected .pledge__body {
-      padding-bottom: 3.1rem; }
+      padding-bottom: 3.1rem;
+      margin-bottom: 0; }
     .pledge.selected .pledge__heading:before {
       content: "\2022";
       color: #3cb4ac;
@@ -343,6 +366,7 @@ body {
       .pledge__head {
         padding-left: 6.4rem;
         padding-right: 2.5rem;
+        margin-bottom: 1.8rem;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: start; } }
@@ -406,6 +430,9 @@ body {
   .pledge__text {
     font-size: 1.5rem;
     line-height: 2.7rem; }
+    @media (max-width: 33.125rem) {
+      .pledge__text {
+        line-height: 2.5rem; } }
   .pledge__footer {
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -644,8 +671,8 @@ body {
     margin-bottom: 1rem;
     width: 100%; }
   .tingle-modal__close {
-    top: 1rem;
-    right: 1rem; }
+    top: 3.3rem;
+    right: 2rem; }
   .tingle-modal__closeLabel {
     display: inline-block;
     vertical-align: middle;
@@ -710,10 +737,12 @@ body {
   background-size: 100% 400px;
   margin-bottom: 2.6rem; }
   .main__jumbotron {
-    margin-top: 23.8rem; }
+    margin-top: 19rem; }
   @media (max-width: 33.125rem) {
     .main {
-      background-image: url("../assets/image-hero-mobile.jpg"); } }
+      background-image: url("../assets/image-hero-mobile.jpg");
+      background-size: 100% 300px;
+      padding-top: 3.3rem; } }
 
 .info {
   background-color: #fff;
@@ -731,7 +760,9 @@ body {
         justify-content: center; } }
     @media (max-width: 33.125rem) {
       .info__content {
-        flex-flow: column nowrap; } }
+        flex-flow: column nowrap;
+        padding-top: 2rem;
+        padding-bottom: 0; } }
   .info__tile {
     display: inline-block;
     padding-top: .9rem; }
@@ -774,11 +805,17 @@ body {
     @media (max-width: 46.875rem) {
       .info__data {
         font-size: 2.8rem; } }
+    @media (max-width: 33.125rem) {
+      .info__data {
+        font-size: 3rem; } }
   .info__label {
     font-size: 1.5rem; }
     @media (max-width: 46.875rem) {
       .info__label {
         font-size: 1.2rem; } }
+    @media (max-width: 33.125rem) {
+      .info__label {
+        font-size: 1.4rem; } }
   .info__progress {
     padding-bottom: 4.7rem; }
 
@@ -791,13 +828,18 @@ body {
   margin-bottom: 12.5rem; }
   @media (max-width: 33.125rem) {
     .about {
-      padding-right: 2.1rem;
-      padding-left: 2.1rem;
-      margin-bottom: 7.8rem; } }
+      padding-right: 2.5rem;
+      padding-left: 2.5rem;
+      margin-bottom: 7.8rem;
+      padding-top: 3.3rem; } }
   .about__heading {
-    margin-bottom: 3.8rem; }
+    margin-bottom: 3rem;
+    font-size: 1.8rem; }
   .about__content-text {
     line-height: 3rem; }
+    @media (max-width: 33.125rem) {
+      .about__content-text {
+        line-height: 2.4rem; } }
   .about__content-text:not(:last-child) {
     margin-bottom: 3rem; }
   .about__content {
@@ -815,7 +857,8 @@ body {
     @media (max-width: 33.125rem) {
       .offer__tile {
         padding-left: 2.1rem;
-        padding-right: 2.1rem; } }
+        padding-right: 2.1rem;
+        padding-top: 2.6rem; } }
     .offer__tile:not(:last-child) {
       margin-bottom: 2.4rem; }
     .offer__tile--disabled {
@@ -837,7 +880,8 @@ body {
     font-size: 1.8rem; }
     @media (max-width: 33.125rem) {
       .offer__name {
-        margin-bottom: 1.4rem; } }
+        margin-bottom: 1.4rem;
+        font-size: 1.4rem; } }
   .offer__price {
     color: #3cb4ac;
     font-weight: 400;
@@ -846,6 +890,9 @@ body {
     margin-bottom: 2.4rem; }
     .offer__body__text {
       line-height: 3rem; }
+      @media (max-width: 33.125rem) {
+        .offer__body__text {
+          line-height: 2.4rem; } }
   .offer__footer {
     display: flex;
     flex-flow: row nowrap;
@@ -862,8 +909,7 @@ body {
     font-weight: 700; }
     @media (max-width: 33.125rem) {
       .offer__amount-left {
-        margin-bottom: 3.2rem;
-        font-size: 2rem; } }
+        margin-bottom: 2.8rem; } }
     .offer__amount-left__label {
       font-size: 1.4rem;
       color: #656565;
